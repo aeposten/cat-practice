@@ -2,10 +2,13 @@ const URL = "https://api.thecatapi.com/v1/images/search";
 const KEY =
   "live_BvivPUxBGDhdkvo0Xk0P5Ji4jjoLSQtqmeUjE3UePkpKpg0y8d7c3CdTN5Ae2te2";
 
+// Dynamically select html element by id
 function selectComponent(elementId) {
   let component = document.getElementById(elementId);
   return component;
 }
+
+
 
 selectComponent("breed-btn").addEventListener("click", function () {
   fetch(`${URL}?has_breeds=1&api_key=${KEY}`)
