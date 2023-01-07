@@ -3,6 +3,10 @@ font-family: 'Proza Libre', sans-serif; */
 
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Proza+Libre:ital,wght@0,400;0,700;1,400&display=swap");
 
+:root {
+    --maintxt: #333333;
+}
+
 body {
   width: 100vw;
   display: flex;
@@ -11,6 +15,7 @@ body {
   align-items: center;
   gap: 2em;
   font-family: 'Proza Libre', sans-serif;
+  color: var(--maintxt)
 }
 
 h1 {
@@ -28,6 +33,7 @@ h1 {
 
 .breed-img {
   width: 30vw;
+  border: 0.5em solid var(--maintxt);
   border-radius: 0.75em;
 }
 
@@ -36,6 +42,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
 }
+
 #breed-txt {
   width: 30vw;
 }
